@@ -11,19 +11,9 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-//        ["U1,Shanghai,NewYork,Paris,Dallas",
-//                "U2,Chicago,London,Paris,Dallas",
-//                "U3,Rio,London,Philly",
-//                "U4,Brunswick,NewHope,Princeton,Paris",
-//                "U5,Shanghai,NewYork,Paris,Dallas"]
-        List<String> infos = new ArrayList<>();
-        infos.add("U1,Shanghai,NewYork,Paris,Dallas");
-        infos.add("U2,Chicago,London,Paris,Dallas");
-        infos.add("U3,Rio,London,Philly");
-        infos.add("U4,Brunswick,NewHope,Princeton,Paris");
-        infos.add("U5,Shanghai,NewYork,Paris,Dallas");
-        findFriends f = new findFriends();
-        List<String> ls = f.findFriends("U1", infos);
-        System.out.println(ls.toString());
+        minimumSizeSubarraySum m = new minimumSizeSubarraySum();
+        int[] nums1 = new int []{2,3,1,2,4,3};
+        int[] nums2 = new int[]{1,4,4};
+        System.out.println(m.minSubArrayLen(4, nums2));
     }
 }
