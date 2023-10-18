@@ -19,6 +19,15 @@ public class minimumSizeSubarraySum {
         1 <= nums[i] <= 104
         Follow up: If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log(n)).
     * */
+
+    /*
+    * public static void main(String[] args) {
+        minimumSizeSubarraySum m = new minimumSizeSubarraySum();
+        int[] nums1 = new int []{2,3,1,2,4,3};
+        int[] nums2 = new int[]{1,4,4};
+        System.out.println(m.minSubArrayLen(4, nums2));
+    }
+    * */
     public int minSubArrayLen(int target, int[] nums) {
         //slide - window
         int left = 0, right = 0, sum = 0, ans = Integer.MAX_VALUE;
